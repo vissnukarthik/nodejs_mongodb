@@ -6,12 +6,14 @@ async function main() {
 
   try {
     await client.connect();
+
    // await ListDatabases(client);
 
    /* await CreateListing(client,{
      summary:"fell the nature",
     bedrooms:1
    }) */
+   
    const data = [{name:"poothottam",bedroom:1},{name:"kootakadu",bedroom:3}];
    await CreateMultipleListing(client,data)
   } catch (e){
